@@ -6,8 +6,9 @@ http://www.ubercart.org/project/uc_stock_update-2x.
 
 Example:
 
-  $csv_reader = new ReadCSV( $file_handle, ',', "\xEF\xBB\xBF" ); // Skip any UTF-8 byte order mark.
-  while ( ( $line = $csv_reader->get_row() ) !== NULL ) {
-    var_dump( $line );
-  }
-
+```php
+$csv_reader = new ReadCSV( $file_handle, ',', "\xEF\xBB\xBF" ); // Skip any UTF-8 byte order mark.
+while ( ( $line = $csv_reader->get_row() ) !== NULL ) {
+	var_dump( $line );
+}
+```
